@@ -92,8 +92,8 @@ class Network:
             deltas = self.layers[i].Layer_back_propagation(lr, deltas)
 
 # Example usage
-inputs = [0.5, 0.2, 0.1]
-targets = [0.5, 0.5, 0.5]
+inputs = [67, 68, 69]
+targets = [6.7, 6.7, 6.7]
 # Creating a network with 3 hidden layers of 5 neurons each and an output layer of 3 neurons
 net = Network([5, 5, 5, 3], 3)
 output = net.network_output(inputs)
@@ -104,7 +104,7 @@ loss /= len(output)
 step = 0
 print("Initial loss:", loss)
 # Training loop
-while loss > 0.0000001:
+while loss > 0.000000001:
     output = net.network_output(inputs)
     # Calculating loss
     loss = 0
