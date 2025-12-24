@@ -92,10 +92,10 @@ class Network:
             deltas = self.layers[i].Layer_back_propagation(lr, deltas)
 
 # Example usage
-inputs = [67, 68, 69]
-targets = [6.7, 6.7, 6.7]
+inputs = [1,2,3]
+targets = [6]
 # Creating a network with 3 hidden layers of 5 neurons each and an output layer of 3 neurons
-net = Network([5, 5, 5, 3], 3)
+net = Network([5, 5, 5, 1], 3)
 output = net.network_output(inputs)
 loss = 0
 for i in range(len(output)):
